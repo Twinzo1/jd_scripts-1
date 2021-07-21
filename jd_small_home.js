@@ -741,7 +741,7 @@ function login(userName) {
     };
     const options = {
       "url": `${JD_API_HOST}/user-info/login`,
-      "body": JSON.stringify(body),
+      "body": JSON.stringify({"body":{"client":body['body']['client'],"userName":body['body']['userName']['lkEPin']}}),
       "headers": {
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate, br",
